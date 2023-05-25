@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+h1 {
+   font-size: 1in;
+   color: white;
+   background-color: black;
+   text-align: center;
+}
+img {
+   width: 100%;
+   height: 100%;
+}
+map {
+display: inline;
+}
+area:hover {
+   background-color: black;
+}
+ #arrow {
+        position: absolute;
+        top: 150%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        background-image: url("https://scontent.fceb2-2.fna.fbcdn.net/v/t1.15752-9/336541045_868991684193598_3848557507237348019_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHF8db_amwVa3R_ljlZ_jWytF8iiakYt120XyKJqRi3XdoZlXn2y40zSS5NRYB58vJtCuahpq6oVO6x-T2GxnoY&_nc_ohc=uG6sXqEf_v8AX_39smF&_nc_ht=scontent.fceb2-2.fna&oh=03_AdQ2XtAVLlrN0fMA-xuH-XNKB61puyKndtBDPj0LvJlX7Q&oe=64438695");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate(-50%, -50%);
+        animation: arrow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes arrow {
+    from {
+     transform: translate(-50%, -50%) rotate(0deg);
+}
+    to {
+     transform: translate(-50%, -50%) rotate(25deg);
+}
+   
+</style>
+</head>
+<body>
+
+<h1> BOHOL MAP </h2>
+<div id="arrow"></div>
+<img src="https://scontent.fceb2-1.fna.fbcdn.net/v/t1.15752-9/336729639_238247768695051_3670305003211684272_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGm1oLLxXclgasURZeb2uEyRoEV-Q5kh61GgRX5DmSHrYRran-UqqsGmejsol-H4Tq3umBS2A35cFCQp_0SyC2C&_nc_ohc=kP4_Kr4PBJQAX_MF4Px&_nc_ht=scontent.fceb2-1.fna&oh=03_AdQTQg3AXmtZqvVwf-MTexNomKqQdRSgXriCJQflPIrwbQ&oe=6447D631" alt="bohol" usemap="#map1">
+
+<map name="map1">
+
+	<area shape="circle" coords="362, 610, 40" alt="sevilla" href="sevillamap.html" title="Sevilla">
+</map>
+
+
+
+</body>
+</html>

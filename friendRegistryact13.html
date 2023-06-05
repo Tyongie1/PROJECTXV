@@ -62,7 +62,7 @@
 	</head>
 	<body>
 		<h1>FRIEND REGISTRY</h1>
-		<form id="myForm" action="https://script.google.com/macros/s/AKfycbyvbN7sCm-40JEfv-v7mBL9a4fvXWya6aXNr1uzOuTAhVN5wokfRXJsROcyMNcokV0G/exec" method="post">
+		<form action="https://script.google.com/macros/s/AKfycbzYoTpGKNFzCUFH9EmMxFmmHUxOmmPkjdXpOAis3keyXFL5Xo0TnWsGztSYvhCNHXMv/exec" method='post'>
 			<label for="name">NAME:</label>
 			<input type="text" id="name" name="name" />
 
@@ -85,15 +85,23 @@
 		</form>
 		
 		<script>
-			document.getElementById("myForm").addEventListener("submit", function(event) {
-				event.preventDefault(); // Prevent the default form submission behavior
-				
-				// Perform your processing or AJAX request here
-				// ...
-				
-				// Redirect to previous page
-				window.history.back();
-			});
-		</script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      
+      // Perform your processing or AJAX request here
+      // ...
+      
+      // Redirect to previous page
+      window.history.back();
+    });
+  </script>
+</body>
+</html>
+In this code, there is an HTML form with two input fields for name and email, and a submit button. The JavaScript code includes an event listener attached to the form's submit event. When the form is submitted, the event listener triggers, preventing the default form submission behavior using event.preventDefault(). After that, you can perform any processing or AJAX requests as needed. Finally, window.history.back() is called to redirect the page to the previous URL in the browser's history.
+
+Please note that this code assumes the script is embedded directly in an HTML file. If you are working with separate HTML and JavaScript files, make sure to include the JavaScript code using the appropriate <script> tag in the HTML file or link the JavaScript file properly.
+
+
+
 	</body>
 </html>
